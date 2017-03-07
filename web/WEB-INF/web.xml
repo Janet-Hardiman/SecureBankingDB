@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+           version="3.1">
+
+    <servlet>
+        <servlet-name>nameIndex</servlet-name>
+        <description>
+            A simple servlet that handles an HTTP get request.
+        </description>
+        <servlet-class>
+            DataBaseDetails
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>nameIndex</servlet-name>
+        <url-pattern>/nameIndex</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>welcome2</servlet-name>
+        <description>
+            A simple servlet that handles an HTTP get request.
+        </description>
+        <servlet-class>
+            WelcomeServlet2
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>welcome2</servlet-name>
+        <url-pattern>/welcome2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>animalsurvey</servlet-name>
+        <description>
+            animal survey
+        </description>
+        <servlet-class>
+            SurveyServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>animalsurvey</servlet-name>
+        <url-pattern>/animalsurvey</url-pattern>
+    </servlet-mapping>
+</web-app>
